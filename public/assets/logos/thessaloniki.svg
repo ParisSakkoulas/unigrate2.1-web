@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="University of Thessaloniki logo">
+  <circle cx="32" cy="32" r="30" fill="#fff"/>
+  <path d="M32 12 6 24l26 12 26-12z" fill="#7a1f3d"/>
+  <path d="M16 31v10c0 4 7 8 16 8s16-4 16-8V31l-16 7z" fill="#b83a64"/>
+  <path d="M56 26v14" stroke="#4a1224" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="56" cy="42" r="3" fill="#4a1224"/>
+</svg>

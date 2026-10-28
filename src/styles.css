@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'primeicons/primeicons.css';
+
+/* Layer order: Tailwind base < PrimeNG < Tailwind utilities (utilities can override PrimeNG) */
+@layer tailwind-base, primeng, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+body {
+  background: #f8fafc;
+  color: #1e293b;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links: different colour for visited and not visited */
+a.app-link {
+  color: var(--p-primary-600);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+a.app-link:hover {
+  color: var(--p-primary-900);
+}
+a.app-link:visited {
+  color: #7e22ce;
+}
+
+/* Show PrimeNG controls as invalid once touched (our forms mark fields touched on submit) */
+.ng-invalid.ng-touched.p-inputtext,
+.ng-invalid.ng-touched > .p-select,
+.ng-invalid.ng-touched.p-select {
+  border-color: var(--p-inputtext-invalid-border-color);
+}

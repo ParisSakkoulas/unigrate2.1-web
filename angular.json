@@ -16,6 +16,7 @@
             "outputPath": "dist/web",
             "index": "src/index.html",
             "browser": "src/main.ts",
+            "allowedCommonJsDependencies": ["pdfmake"],
             "polyfills": [
               "zone.js"
             ],
@@ -36,8 +37,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
-                  "maximumError": "1MB"
+                  "maximumWarning": "1.2MB",
+                  "maximumError": "1.5MB"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -92,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "195c5305-b3c8-4881-8b2c-e761a67f6c89"
   }
 }
